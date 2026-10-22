@@ -50,6 +50,6 @@ hr-analytics/
 2. Ejecuta `notebooks/01_eda_hr.ipynb` de principio a fin.
 3. Abre `dashboards/hr_dashboard.pbix` en Power BI Desktop.
 
----
+Las conclusiones completas están en [docs/conclusiones.md](docs/conclusiones.md).
 
 **Autor:** Guillermo Adrianza · Ingeniero en Sistemas
