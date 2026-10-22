@@ -39,7 +39,6 @@ Las conclusiones completas están en [docs/conclusiones.md](docs/conclusiones.md
 hr-analytics/
 ├── data/
 │   ├── raw/                     # Dataset original (IBM HR)
-│   └── processed/               # Generado por el notebook (no se sube a Git)
 ├── docs/
 │   └── conclusiones.md          # Conclusiones completas
 ├── notebooks/
