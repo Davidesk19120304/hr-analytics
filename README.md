@@ -4,7 +4,7 @@ Análisis de rotación de 1,470 empleados con limpieza en Python y dashboard int
 
 ## Dashboard
 
-🔗 Dashboard publicado: [https://app.powerbi.com/links/nKtHqlCKXC?ctid=3374819b-3f7f-4153-ab6a-fd4afd7b386c&pbi_source=linkShare]
+🔗 **Dashboard publicado:** [Ver en Power BI](https://app.powerbi.com/links/nKtHqlCKXC?ctid=3374819b-3f7f-4153-ab6a-fd4afd7b386c&pbi_source=linkShare)
 
 ![Dashboard de rotación](images/dashboard_pagina1.png)
 
@@ -24,6 +24,8 @@ Análisis de rotación de 1,470 empleados con limpieza en Python y dashboard int
 
 **Variable no concluyente:** años desde la última promoción. La rotación no sigue una tendencia clara, y los grupos con más años tienen muy pocos empleados.
 
+Las conclusiones completas están en [docs/conclusiones.md](docs/conclusiones.md).
+
 ## Limitaciones
 
 - El análisis muestra asociación, no causa. Los factores se traslapan entre sí.
@@ -32,24 +34,40 @@ Análisis de rotación de 1,470 empleados con limpieza en Python y dashboard int
 - No sabemos si la distancia hace que la gente se vaya o si quien se va ya había encontrado trabajo más lejos.
 
 ## Estructura del proyecto
+
+```
 hr-analytics/
 ├── data/
-│ ├── raw/ # Dataset original (IBM HR)
-│ └── processed/ # hr_attrition_clean.csv
+│   ├── raw/                     # Dataset original (IBM HR)
+│   └── processed/               # Generado por el notebook (no se sube a Git)
+├── docs/
+│   └── conclusiones.md          # Conclusiones completas
 ├── notebooks/
-│ └── 01_eda_hr.ipynb # Limpieza, análisis y conclusiones
+│   └── 01_eda_hr.ipynb          # Limpieza, análisis y conclusiones
 ├── dashboards/
-│ └── hr_dashboard.pbix # Dashboard de Power BI
+│   └── hr_dashboard.pbix        # Dashboard de Power BI
 ├── images/
-│ └── dashboard_pagina1.png
+│   └── dashboard_pagina1.png
+├── .gitignore
+├── requirements.txt
 └── README.md
+```
 
 ## Cómo reproducirlo
 
-1. Activa el entorno: `conda activate sales`
-2. Ejecuta `notebooks/01_eda_hr.ipynb` de principio a fin.
-3. Abre `dashboards/hr_dashboard.pbix` en Power BI Desktop.
+```bash
+# 1. Crear el entorno
+conda create -n sales python=3.11 -y
+conda activate sales
+pip install -r requirements.txt
 
-Las conclusiones completas están en [docs/conclusiones.md](docs/conclusiones.md).
+# 2. Ejecutar el notebook (genera data/processed/hr_attrition_clean.csv)
+cd notebooks
+jupyter notebook 01_eda_hr.ipynb
+
+# 3. Abrir dashboards/hr_dashboard.pbix en Power BI Desktop
+```
+
+---
 
 **Autor:** Guillermo Adrianza · Ingeniero en Sistemas
