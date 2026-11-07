@@ -56,7 +56,7 @@ hr-analytics/
 
 ```bash
 # 1. Crear el entorno
-conda create -n sales python=3.11 -y
+conda create -n hr-analytics python=3.11 -y
 conda activate sales
 pip install -r requirements.txt
 
