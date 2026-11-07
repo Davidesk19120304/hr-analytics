@@ -4,7 +4,7 @@ Análisis de rotación de 1,470 empleados con limpieza en Python y dashboard int
 
 ## Dashboard
 
-🔗 **Dashboard publicado:** [Ver en Power BI](https://app.powerbi.com/links/nKtHqlCKXC?ctid=3374819b-3f7f-4153-ab6a-fd4afd7b386c&pbi_source=linkShare)
+🔗 **Dashboard publicado:** [Ver en Power BI](https://app.powerbi.com/reportEmbed?reportId=83f21930-1bae-4801-8b4f-2747cc69f8c9&autoAuth=true&ctid=3374819b-3f7f-4153-ab6a-fd4afd7b386c).
 
 ![Dashboard de rotación](images/dashboard_pagina1.png)
 
