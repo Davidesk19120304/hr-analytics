@@ -44,7 +44,7 @@ hr-analytics/
 ├── notebooks/
 │   └── 01_eda_hr.ipynb          # Limpieza, análisis y conclusiones
 ├── dashboards/
-│   └── hr_dashboard.pbix        # Dashboard de Power BI
+│   └── hr_analytics.pbix        # Dashboard de Power BI
 ├── images/
 │   └── dashboard_pagina1.png
 ├── .gitignore
